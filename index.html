@@ -27,7 +27,7 @@
                 </svg>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav d-flex  m-auto pl-lg-4">
+                <ul class="navbar-nav d-flex  m-auto  ">
                     <li class="nav-item m-xl-3"><a class="nav-link " href="subscribe.html">Главная</a></li>
                     <li class="nav-item m-xl-3"><a class="nav-link " href="about1.html">О нас</a></li>
                     <li class="nav-item m-xl-3"><a class="nav-link " href="#">Сервисы</a></li>
@@ -35,7 +35,7 @@
 
 
                 </ul>
-                <div class="header__buttons  gap-4 ms-lg-auto  d-flex">
+                <div class="header__buttons   d-flex">
                     <button class="button  button-blue-round  " type="button">Связаться</button>
 
                 </div>
@@ -88,7 +88,7 @@
                 Стадика  <span class="highlight">уже 11 лет</span> работает с вузами
                 в России и мире
             </h2>
-            <p class="marketing-block__description mt-5 mb-4">
+            <p class="w-80 marketing-block__description mt-5 mb-4">
                 Команда Стадики – эксперты в сфере маркетинга
                 в образовании (EdTech). Мы строим креативные стратегии
                 и <span class="highlight">работаем с ведущими вузами в России и за границей:</span> ВШЭ, РУДН, МГИМО, NESO, Schwarzman Scholars, Swiss Education Group, Иннополис, AUCA, BSB etc.
@@ -96,24 +96,24 @@
 
 
         </div>
-        <div class="col-lg-5 pe-4 ps-4">
+        <div class="col-lg-6 pe-4 ps-4">
             <div class="row mt-4  ">
                 <div class="col-md-8 ">
-                    <h5 class="marketing-block__card-title  ">Актуальные инструменты</h5>
-                    <p class="fs-6 marketing-block__card-text "> Используем тренды рынка, чтобы
+                    <h5 class="marketing-block__card-title-fs96  ">Актуальные инструменты</h5>
+                    <p class=" marketing-block__card-text "> Используем тренды рынка, чтобы
                         при <span class="highlight">минимальных затаратах</span>  привлекать заинтересованных абитуриентов</p>
                 </div>
             </div>
             <div class="row mt-4  ">
                 <div class="col-md-8 ">
-                    <h5 class="marketing-block__card-title  ">Внедряем креативные стратегии </h5>
-                    <p class="fs-6 marketing-block__card-text "> Чтобы выгодно <span class="highlight">отличаться от конкурентных предложений</span> и работать с новыми поколениями: Z и alpha</p>
+                    <h5 class="marketing-block__card-title-fs96  ">Внедряем креативные стратегии </h5>
+                    <p class=" marketing-block__card-text "> Чтобы выгодно <span class="highlight">отличаться от конкурентных предложений</span> и работать с новыми поколениями: Z и alpha</p>
                 </div>
                         </div>
             <div class="row mt-4  ">
                 <div class="col-md-8 ">
-                    <h5 class="marketing-block__card-title ">Развиваем свои медиа-каналы</h5>
-                    <p class="fs-6 marketing-block__card-text "> Мы уже собрали более 1 миллиона абитуриентов и студентов – вашей целевой аудитории на наших медиа-площадках</p>
+                    <h5 class="marketing-block__card-title-fs96 ">Развиваем свои медиа-каналы</h5>
+                    <p class=" marketing-block__card-text "> Мы уже собрали более 1 миллиона абитуриентов и студентов – вашей целевой аудитории на наших медиа-площадках</p>
                 </div>
             </div>
         </div>
@@ -244,10 +244,14 @@
 
     <div  class="row" >
 
-            <div class=" col-lg-4  ">
+            <div class=" col-xl-4  ">
                 <div class="container d-flex justify-content-center align-items-center ">
                     <div class="review-card">
-                        <img src="img/rev_ico1.png" alt="Аватар" class="review-card__avatar">
+                        <div class="avatar-wrapper">
+                            <img src="img/rev_ico1.png" alt="Аватар" class="review-card__avatar">
+                            <div class="avatar-outline"></div>
+
+                        </div>
                         <div class="review-card__name">Иван</div>
                         <div class="review-card__surname">Гордеев</div>
                         <div class="review-card__position">Проектный Менеджер</div>
@@ -259,31 +263,39 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 ">
+            <div class="col-xl-4 ">
                 <div class="container d-flex justify-content-center align-items-center ">
                     <div class="review-card">
-                        <img src="img/rev_ico2.png" alt="Аватар" class="review-card__avatar">
-                        <div class="review-card__name">Иван</div>
-                        <div class="review-card__surname">Гордеев</div>
-                        <div class="review-card__position">Проектный Менеджер</div>
-                        <div class="review-card__work">Бродячий Цирк</div>
+                        <div class="avatar-wrapper">
+                            <img src="img/rev_ico2.png" alt="Аватар" class="review-card__avatar">
+                            <div class="avatar-outline"></div>
+
+                        </div>
+                        <div class="review-card__name">Екатерина</div>
+                        <div class="review-card__surname">Седова-Непейвода</div>
+                        <div class="review-card__position">Депутат</div>
+                        <div class="review-card__work">Правительство РФ</div>
                         <div class="review-card__stars">★★★★★</div>
-                        <p class="review-card__text">Работаем со Стадикой с 2021 года. Нравится, что находятся решения под любой наш бюджет и запрос, независимо от того, что мы продвигаем: набор на стипендиальную программу.</p>
+                        <p class="review-card__text">Недавно придумала прикольный закон, обязующий всех студентов носить на голове ведро с диаметром дна не более 35см, вот смеху-то было! А Вообще СТАДИКА — серьёзная организация, не то, что мы  - депутаты.</p>
                         <img src="img/webflow-logo-blue-black.svg" alt="Webflow" class="review-card__logo">
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4  ">
+            <div class="col-xl-4  ">
                 <div class="container d-flex justify-content-center align-items-center ">
                     <div class="review-card">
-                        <img src="img/rev_ico3.png" alt="Аватар" class="review-card__avatar">
-                        <div class="review-card__name">Иван</div>
-                        <div class="review-card__surname">Гордеев</div>
-                        <div class="review-card__position">Проектный Менеджер</div>
-                        <div class="review-card__work">Бродячий Цирк</div>
+                        <div class="avatar-wrapper">
+                            <img src="img/rev_ico3.png" alt="Аватар" class="review-card__avatar">
+                            <div class="avatar-outline"></div>
+
+                        </div>
+                        <div class="review-card__name">Марина</div>
+                        <div class="review-card__surname">Протонова</div>
+                        <div class="review-card__position">Сапер</div>
+                        <div class="review-card__work">Министерство Обороны РФ</div>
                         <div class="review-card__stars">★★★★★</div>
-                        <p class="review-card__text">Работаем со Стадикой с 2021 года. Нравится, что находятся решения под любой наш бюджет и запрос, независимо от того, что мы продвигаем: набор на стипендиальную программу.</p>
+                        <p class="review-card__text">Мне везет! Чертовски везет по жизни! Я ни разу не “сгорела” на работе. С мужем повезло, у него IQ где-то в районе 45-50, а недавно узнала про СТАДИКА, с тех пор из головы не выходит.</p>
                         <img src="img/webflow-logo-blue-black.svg" alt="Webflow" class="review-card__logo">
                     </div>
                 </div>
@@ -651,6 +663,22 @@ function faqClickHandler(event) {
 }
 
 initFaqTitle();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const insertBlock = document.querySelector(".insert");
+
+    insertBlock.addEventListener("mousemove", (e) => {
+        const { width, height, left, top } = insertBlock.getBoundingClientRect();
+        const x = e.clientX - left - width / 2;
+        const y = e.clientY - top - height / 2;
+
+        insertBlock.style.boxShadow = `${25 + x * 0.05}px ${25 + y * 0.05}px 0px #8368F7`;
+    });
+
+    insertBlock.addEventListener("mouseleave", () => {
+        insertBlock.style.boxShadow = "25px 25px 0px #8368F7";
+    });
+});
 
 
 

@@ -7,7 +7,7 @@
 
 .highlight-shadow {
   color: #3860a6;
-  text-shadow: 0 12px 0 #f7d068;
+  text-shadow: 0 5px 0 #f7d068;
 }
 
 .highlight-white {
@@ -34,6 +34,24 @@
 @font-face {
   font-family: "MYRIADPRO";
   src: local("MYRIADPRO-Regular"), url("../fonts/MYRIADPRO-Regular.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: local("Involve-Bold"), url("../fonts/Involve-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: local("Involve-SemiBold"), url("../fonts/Involve-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: local("Involve-Regular"), url("../fonts/Involve-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -108,9 +126,9 @@ button {
   margin: auto;
 }
 .header .navbar-nav {
-  font-family: "MYRIADPRO", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: "Involve", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
   line-height: 150%;
 }
 .header .navbar-dark .navbar-nav .nav-link {
@@ -278,9 +296,10 @@ button {
   color: #FFFFFF;
   font-size: 21px;
   padding: 12px 35px;
+  transition: transform 0.2s ease-in-out;
 }
 .button-blue-round:hover {
-  text-decoration: underline;
+  transform: scale(1.1);
 }
 .button-white-transparent {
   font-family: "MYRIADPRO", sans-serif;
@@ -292,9 +311,11 @@ button {
   color: #000000;
   font-size: 21px;
   padding: 12px 35px;
+  text-decoration: underline;
+  transition: transform 0.2s ease-in-out;
 }
 .button-white-transparent:hover {
-  text-decoration: underline;
+  transform: scale(1.1);
 }
 .button--transparent {
   background-color: transparent;
@@ -333,9 +354,10 @@ button {
   border-radius: 25px;
   border: 1px solid #3860a6;
   color: #FFFFFF;
+  transition: transform 0.2s ease-in-out;
 }
 .button--black:hover {
-  text-decoration: underline;
+  transform: scale(1.1);
 }
 .button--blue {
   border-radius: 0;
@@ -907,29 +929,57 @@ button {
   font-family: "MYRIADPRO", sans-serif;
   font-weight: 400;
   padding: 30px;
-  border-radius: 50px;
-  min-height: 350px;
-  max-width: 500px;
+  border-radius: 70px;
+  min-height: 500px;
+  max-width: 360px;
   background: #f6f6f6;
   text-align: center;
   margin: auto;
   position: relative;
   overflow: visible;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .review-card {
     margin-bottom: 140px;
   }
 }
 
-.review-card__avatar {
-  width: 50%;
-  border-radius: 50%;
-  object-fit: cover;
+.avatar-wrapper {
   position: absolute;
-  top: -28%;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background: #f6f6f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card__avatar {
+  z-index: 2;
+  width: 195px;
+  border-radius: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -56px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.avatar-outline {
+  position: absolute;
+  width: 200px; /* Должно быть чуть больше аватарки */
+  height: 100px; /* Половина высоты круга */
+  bottom: -43px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 15px solid #ddd; /* Цвет и толщина обводки */
+  border-top: none; /* Убираем верхнюю границу */
+  border-radius: 0 0 100px 100px; /* Закругление только снизу */
 }
 
 .review-card__name {
@@ -937,7 +987,6 @@ button {
   font-weight: 400;
   font-size: 25px;
   line-height: 94%;
-  font-weight: bold;
   margin-top: 24%;
 }
 
@@ -963,6 +1012,7 @@ button {
   font-size: 14px;
   color: #000000;
   margin-bottom: 27px;
+  font-weight: bold;
 }
 
 .review-card__stars {
@@ -1129,6 +1179,7 @@ body {
   border-radius: 50px;
   box-shadow: 25px 25px 0px #8368F7;
   background: #F7D068;
+  transition: box-shadow 0.1s ease-out;
 }
 @media (max-width: 992px) {
   .insert {
@@ -1150,7 +1201,7 @@ body {
 .insert__description {
   font-family: "MYRIADPRO", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 150%;
 }
 @media (max-width: 992px) {
@@ -1350,8 +1401,8 @@ body {
 .marketing-block__description {
   font-family: "MYRIADPRO", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
+  font-size: 22px;
+  line-height: 100%;
 }
 .marketing-block__card {
   height: 100%;
@@ -1370,18 +1421,21 @@ body {
 .marketing-block__card-title {
   font-family: "MYRIADPRO", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 140%;
 }
 .marketing-block__card-text {
   font-family: "MYRIADPRO", sans-serif;
   font-weight: 400;
+  font-size: 22px;
+  line-height: 110%;
 }
 .marketing-block__card-title-fs96 {
   font-family: "MYRIADPRO", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
+  margin-bottom: 20px;
   line-height: 140%;
-  font-size: 96px;
+  font-size: 20px;
 }
 .marketing-block__image {
   max-width: 100%;
@@ -1696,6 +1750,7 @@ body {
   background: url("../img/ellipse1.svg") right top no-repeat;
   background-size: contain;
   z-index: 1;
+  animation: floatAnimation 3s ease-in-out infinite;
 }
 
 .ellipse_bg::before {
@@ -1708,8 +1763,17 @@ body {
   background: url("../img/ellipse2.svg") right top no-repeat;
   background-size: contain;
   z-index: 1;
+  animation: floatAnimation 4s ease-in-out infinite;
 }
 
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 .registration-form__input {
   font-size: 16px;
   padding: 12px;
