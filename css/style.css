@@ -345,6 +345,10 @@ button {
   background-color: transparent;
   color: #000000;
   text-decoration: underline;
+  transition: transform 0.2s ease-in-out;
+}
+.button--no-border:hover {
+  transform: scale(1.1);
 }
 .button--black {
   font-family: "MYRIADPRO", sans-serif;
@@ -363,9 +367,10 @@ button {
   border-radius: 0;
   background-color: #3860a6;
   color: #FFFFFF;
+  transition: transform 0.2s ease-in-out;
 }
 .button--blue:hover {
-  text-decoration: underline;
+  transform: scale(1.1);
 }
 .button--blue--transparent {
   background-color: transparent;
@@ -384,6 +389,10 @@ button {
   background-color: #e7e7e7;
   border: 1px solid #e7e7e7;
   color: #3860a6;
+  transition: transform 0.2s ease-in-out;
+}
+.registration-form__button--white--transparent:hover {
+  transform: scale(1.1);
 }
 
 .subscribe {
@@ -987,7 +996,7 @@ button {
   font-weight: 400;
   font-size: 25px;
   line-height: 94%;
-  margin-top: 30%;
+  margin-top: 24%;
 }
 
 .review-card__surname {
@@ -1733,7 +1742,7 @@ body {
 }
 
 .messenger_ico {
-  width: 130px;
+  width: 100px;
 }
 
 .ellipse_bg {
